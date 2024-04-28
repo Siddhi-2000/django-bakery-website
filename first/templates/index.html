@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{%block body%}
+<!-- {%csrf_token%} -->
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner my-4">
+        <div class="carousel-item active ">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-2.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="d-block w-100 k" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="https://plus.unsplash.com/premium_photo-1678198785674-9fd88856d64d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="d-block w-100 k" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/1388990855/photo/set-of-unique-summer-chocolate-popsicle-and-ice-cream-treats-isolated-on-white.jpg?b=1&s=170667a&w=0&k=20&c=ksNSO6y3ktK1HnwfjgcCsKRgtNLw8m9e01JGVPJYgqk=" class="d-block w-100 k" alt="...">
+          </div>
+        
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container ">
+    <h1 class="my-3 text-center">Hi <em>{{fname}}</em>!</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 major">
+      
+      <div class="col py-3">
+        <div class="card shadow-sm order">
+          <img class="card-img" src="https://media.istockphoto.com/id/1154608974/photo/chocolate-ice-cream.jpg?b=1&s=170667a&w=0&k=20&c=m1SaRIQbx63T_VfG95pNHvdqtzopK0FWEclor61MNjw=">
+          <div class="card-body">
+            <h1 class="text-center">CHOCOLATE</h1>
+            <p class="card-text">Treat yourself and your loved ones to this lusciously original flavour.Chocolate chunks are lavishly added so you relish this one with all your heart!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm order">
+          <img class="card-img" src="https://media.istockphoto.com/id/1224712052/photo/glaces-ice-cream.jpg?b=1&s=170667a&w=0&k=20&c=wm64Wi6SAW5ZY6DRdoqTVaRNHeucOgCfDOp6TQiUoD8="">
+          <div class="card-body">
+            <h1 class="text-center">COFFEE</h1>
+            <p class="card-text">A perfect blend of rich coffee, milk and hand-cut chocolate chunks infused into ice cream. Now this is as drool-worthy as it gets.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm order">
+          <img class="card-img" src="https://media.istockphoto.com/id/1351468782/photo/almond-cookie-and-scoop-of-ice-cream-served-on-olive-wood-bowl.jpg?b=1&s=170667a&w=0&k=20&c=3vkP7cNBJmnSlgcPzqYY4Giytn1lcSPdHZnOIT_ciCE=">
+          <div class="card-body">
+            <h1 class="text-center">MANGO</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'" >ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm order">
+          <img class="card-img" src="https://media.istockphoto.com/id/1151021562/photo/cookies-and-cream-ice-cream-in-a-waffle-cone.jpg?b=1&s=170667a&w=0&k=20&c=0FndSStbDp4Y6DHlrajhwFWVJLgGxNPFQH4Q2mh8ToE=">
+          <div class="card-body">
+            <h1 class="text-center">COOKIE N CREAM</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm  order">
+          <img class="card-img"src="https://media.istockphoto.com/id/1326143969/photo/bowl-with-vanilla-ice-cream-balls.jpg?b=1&s=170667a&w=0&k=20&c=bzLWih1MzXZnOb9x6929GXmBobUlyw4lEjxWytX7uxU=">
+          <div class="card-body">
+            <h1 class="text-center">VANILLA</h1>
+            <p class="card-text">When summer comes calling, we recommend our original Musk Mango flavour to beat the heat. Try this unique flavour that's best enjoyed on a hot, summer day.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm  order">
+          <img class="card-img"src="https://media.istockphoto.com/id/1264447431/photo/strawberry-ice-cream-with-fresh-strawberries.jpg?b=1&s=170667a&w=0&k=20&c=FVNgWDz65NRTp02xlQY28MN2Cy2TKjvGB9rnPjPO70E=">
+          <div class="card-body">
+            <h1 class="text-center">STRAWBERRIES</h1>
+            <p class="card-text"> Ice cream with real  strawberries and strawberry ribbon. This Strawberry ice cream has stood the test of time. You simply cannot go wrong with this delicious ice cream.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col py-3">
+        <div class="card shadow-sm  order">
+          <img class="card-img"src="https://media.istockphoto.com/id/173925141/photo/chocolate-cake-with-ice-cream.jpg?b=1&s=170667a&w=0&k=20&c=WForR8svhHTnUYHWiM0208R-80OemPDTErhggiKnL6g=">
+          <div class="card-body">
+            <h1 class="text-center">BUTTERSCOTCH</h1>
+            <p class="card-text">Vanilla ice cream swirled with butterscotch ribbon. This thick, sinful butterscotch ribbon will leave you going back for seconds!</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col py-3">
+        <div class="card shadow-sm  order">
+          <img class="card-img"src="https://media.istockphoto.com/id/165206308/photo/ice-cream.jpg?b=1&s=170667a&w=0&k=20&c=SlkjunrK1lW9NT6htFJsItTrwnzczvkjkau2BIfvPh8=">
+          <div class="card-body">
+            <h1 class="text-center">COCONUT</h1>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary butk"  onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="card shadow-sm  order">
+          <img class="card-img" src="https://media.istockphoto.com/id/488474233/photo/ice-cream-sundae.jpg?b=1&s=170667a&w=0&k=20&c=zbjfCBAyLH7u7DSkPcrjQmUbbVMQVgcQ_F7zri6ih_E=">
+          <div class="card-body">
+            <h1 class="text-center">CARAMEL</h1>
+            <p class="card-text">Ice cream with rich caramel almonds. Honey, it?s nutty, it?s crunchy and it?s delightful. What are you waiting for?</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="submit" class="btn btn-sm btn-outline-secondary butk" onclick="window.location.href='/order'">ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+         {%endblock body%}

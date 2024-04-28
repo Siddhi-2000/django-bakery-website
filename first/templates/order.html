@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block body%}
+<div class="w-75 p-5 main">
+<form method="post">
+    {% csrf_token %}
+    <h2 class="">FILL ME</h2>
+   
+    <div class="row mb-4">
+      <div class="col">
+        <!-- <div class="form-outline">
+          <input type="text" id="form6Example1" class="form-control" />
+          <label class="form-label" for="form6Example1">First name</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="form6Example2" class="form-control" />
+          <label class="form-label" for="form6Example2">Last name</label>
+        </div>
+      </div>
+    </div>
+  
+ 
+    <!-- <div class="form-outline mb-4">
+      <input name="email" type="email" id="form6Example3" class="form-control" />
+      <label class="form-label" for="form6Example3">email</label>
+    </div>  -->
+  
+    <div class="form-outline mb-4">
+      <input name="adress" type="textbox" id="form6Example4" class="form-control" />
+      <label class="form-label" for="form6Example4">Address</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input  name="flavor" type="text" id="form6Example4" class="form-control w-25" />
+        <label class="form-label" for="form6Example4">Flavor</label>
+      </div>
+
+    <div class="form-outline mb-4">
+        <input name="quantity" type="number" id="form6Example4" class="form-control w-25" />
+        <label class="form-label" for="form6Example4">Quantity</label>
+      </div>
+  
+    <!-- Email input
+    <div class="form-outline mb-4">
+      <input type="email" id="form6Example5" class="form-control" />
+      <label class="form-label" for="form6Example5">Email</label>
+    </div> -->
+  
+    <div class="form-outline mb-4">
+      <input name="phone" type="number" id="form6Example6" class="form-control w-25" />
+      <label class="form-label" for="form6Example6">Phone</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <textarea name="addinfo" class="form-control" id="form6Example7" rows="4"></textarea>
+      <label class="form-label" for="form6Example7">Additional information</label>
+    </div>
+ 
+    <button type="submit" class="btn btn-success btn-block mb-4 w-25 place-order-btn">Place order</button>
+  </form>
+</div>
+{%endblock%}

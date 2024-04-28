@@ -1,0 +1,55 @@
+.k{
+    width: 400px;
+    height: 400px;
+}
+
+.formDiv{
+    position: relative;
+    left: 200px;
+}
+
+.butk{
+    position: relative;
+    left: 150px;
+}
+.butka{
+   width:10px;
+   height: 10px;
+}
+
+.order{
+    width:400px;
+    height:500px;
+}
+
+.major{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sizing{
+    height: 510px;
+}
+
+.card-img{
+    width: 398px;
+    height: 265px;
+}
+.container{
+    max-width: 100%;
+}
+
+.submitref{
+    position: relative;
+
+}
+
+.main{
+    position: relative;
+    left: 200px;
+}
+
+.place-order-btn{
+    position: relative;
+    left: 350px;
+}
